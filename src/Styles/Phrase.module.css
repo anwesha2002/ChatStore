@@ -1,0 +1,30 @@
+.sentence{
+    overflow: hidden; /* Hides content that overflows the element's box */
+    display: -webkit-box; /* Required for -webkit-line-clamp to work */
+    -webkit-box-orient: vertical; /* Stacks the content vertically */
+    -webkit-line-clamp: 2; /* Clamps the text to 3 lines */
+    text-overflow: ellipsis;
+}
+
+.definition{
+    overflow: hidden; /* Hides content that overflows the element's box */
+    display: -webkit-box; /* Required for -webkit-line-clamp to work */
+    -webkit-box-orient: vertical; /* Stacks the content vertically */
+    -webkit-line-clamp: 3; /* Clamps the text to 3 lines */
+    text-overflow: ellipsis;
+}
+
+.resultDiv{
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+    color: #1E1E1E;
+    pre{
+        background-color: #1E1E1E;
+        color: #fff;
+        text-wrap: wrap;
+        padding: 5px;
+        border-radius: 8px;
+    }
+    margin: 10px;
+}
